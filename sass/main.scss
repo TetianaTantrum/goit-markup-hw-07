@@ -1,1 +1,34 @@
-@import
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
+@import './base/centered';
+@import './base/section';
+
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/contacts";
+@import './components/title';
+@import './components/actions';
+@import './components/footer';
+@import './components/socials';
+@import './components/sign-up';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/user-form';
+
+
+
+@import "./layout/hero";
+@import './layout/features';
+@import './layout/occupation';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/filter';
+@import './layout/projects'
+
+
+
+
