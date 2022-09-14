@@ -104,7 +104,6 @@ ul ol {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  /* gap: 93px; */
 }
 
 .centered {
@@ -179,7 +178,6 @@ ul ol {
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .nav:hover,
 .nav:focus {
   color: var(--accent-color);
@@ -189,7 +187,6 @@ ul ol {
   color: var(--accent-color);
   position: relative;
 }
-
 .current::after {
   content: "";
   display: block;
@@ -222,7 +219,6 @@ ul ol {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
@@ -290,9 +286,9 @@ ul ol {
   cursor: pointer;
   color: var(--icon-fill-color);
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .actions-link:hover,
 .actions-link:focus {
   background-color: var(--accent-color);
@@ -320,15 +316,16 @@ ul ol {
   color: var(--text-light-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.address-location:hover,
+.address-location:focus {
+  color: var(--accent-color);
+}
 
 .address-contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-location:hover,
-.address-location:focus,
 .address-contacts:hover,
 .address-contacts:focus {
   color: var(--accent-color);
@@ -361,7 +358,6 @@ ul ol {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--accent-color);
@@ -383,7 +379,6 @@ ul ol {
   color: var(--text-light-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sign-up-input:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -416,7 +411,6 @@ ul ol {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sign-up-btn:hover,
 .sign-up-btn:focus {
   background-color: var(--accent-hover-color);
@@ -434,7 +428,9 @@ ul ol {
   transform: scale(1);
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), visibility 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 800ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -470,7 +466,6 @@ ul ol {
   background-color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .close-button:hover,
 .close-button:focus {
   color: var(--accent-color);
@@ -526,12 +521,10 @@ ul ol {
   letter-spacing: 0.01em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .form-input:focus + .form-icon {
   color: var(--accent-color);
 }
@@ -549,7 +542,6 @@ ul ol {
   letter-spacing: 0.01em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-message:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -559,18 +551,28 @@ ul ol {
   position: absolute;
   appearance: none;
 }
+.form-check:focus + .form-own-check {
+  border-color: var(--accent-color);
+}
+.form-check:checked + .form-own-check {
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.form-check:checked + .form-own-check {
+  background-color: var(--accent-color);
+}
+.form-check:checked + .form-own-check .form-own-check-icon {
+  display: block;
+}
 
-/*  */
 .form-own-check {
   border: 2px solid var(--title-color);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
   margin-left: 14px;
-}
-
-.form-check:focus + .form-own-check {
-  border-color: var(--accent-color);
 }
 
 .form-own-check-icon {
@@ -593,17 +595,9 @@ ul ol {
   color: var(--text-color);
 }
 
-.form-check:checked + .form-own-check {
-  background-color: var(--accent-color);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
-}
-
 .form-policy-link {
   color: var(--accent-color);
 }
-
 .form-policy-link:hover,
 .form-policy-link:focus {
   text-decoration: none;
@@ -612,14 +606,6 @@ ul ol {
 .form-own-check-icon {
   display: none;
   fill: var(--text-light-color);
-}
-
-.form-check:checked + .form-own-check {
-  background-color: var(--accent-color);
-}
-
-.form-check:checked + .form-own-check .form-own-check-icon {
-  display: block;
 }
 
 .form-btn {
@@ -643,7 +629,6 @@ ul ol {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-btn:hover,
 .form-btn:focus {
   background-color: var(--accent-hover-color);
@@ -653,7 +638,12 @@ ul ol {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background1.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -690,7 +680,6 @@ ul ol {
   color: var(--text-light-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-hover-color);
@@ -770,7 +759,8 @@ ul ol {
 .team-mate-card {
   flex-basis: calc((100% - 90px) / 4);
   background-color: var(--text-light-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -815,9 +805,9 @@ ul ol {
   color: var(--icon-fill-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
@@ -860,10 +850,10 @@ ul ol {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .filter-btn:hover,
 .filter-btn:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--text-light-color);
@@ -872,7 +862,8 @@ ul ol {
 
 .active-btn {
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--text-light-color);
 }
 
@@ -891,11 +882,15 @@ ul ol {
   display: block;
   text-decoration: none;
 }
-
 .project-card:hover,
 .project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .project-thumb,
+.project-card:focus .project-thumb {
+  transform: translateY(0);
 }
 
 .project-overlay {
@@ -921,11 +916,6 @@ ul ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover .project-thumb,
-.project-card:focus .project-thumb {
-  transform: translateY(0);
-}
-
 .project-notes {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -946,4 +936,4 @@ ul ol {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

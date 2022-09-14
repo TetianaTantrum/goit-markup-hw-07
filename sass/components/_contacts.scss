@@ -17,11 +17,11 @@
   fill: currentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact:hover,
-.contact:focus {
+&:hover,
+&:focus {
   color: var(--accent-color);
-}
+}}
+
 .icon-contact {
   display: flex;
   align-items: center;

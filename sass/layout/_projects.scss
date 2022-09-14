@@ -12,12 +12,16 @@
   position: relative;
   display: block;
   text-decoration: none;
-}
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .project-thumb,
+  &:focus .project-thumb {
+    transform: translateY(0);
+  }
 }
 .project-overlay {
   position: relative;
@@ -41,10 +45,7 @@
   transform: translateY(100.5%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-card:hover .project-thumb,
-.project-card:focus .project-thumb {
-  transform: translateY(0);
-}
+
 .project-notes {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
