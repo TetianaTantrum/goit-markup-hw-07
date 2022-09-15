@@ -3,10 +3,10 @@
   flex-wrap: wrap;
   column-gap: 30px;
 }
-.feature-item {
+.feature__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
-.icon-features {
+.feature__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.feature-text {
+.feature__text {
   margin-top: 0;
   margin-bottom: 0px;
   font-size: 14px;

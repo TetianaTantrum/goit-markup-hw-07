@@ -237,7 +237,7 @@ ul ol {
 .sign-up-title,
 .socials-title,
 .feature-title,
-.occupation-title {
+.occupation__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -692,11 +692,11 @@ ul ol {
   column-gap: 30px;
 }
 
-.feature-item {
+.feature__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.icon-features {
+.feature__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -706,7 +706,7 @@ ul ol {
   border-radius: 4px;
 }
 
-.feature-text {
+.feature__text {
   margin-top: 0;
   margin-bottom: 0px;
   font-size: 14px;
@@ -717,17 +717,17 @@ ul ol {
   padding-top: 0;
 }
 
-.occupation-list {
+.occupation__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.occupation-thumb {
+.occupation__thumb {
   position: relative;
 }
 
-.occupation-title {
+.occupation__title {
   position: absolute;
   color: #ffffff;
   width: 100%;
@@ -742,7 +742,7 @@ ul ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.occupation-item {
+.occupation__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -823,7 +823,7 @@ ul ol {
   cursor: pointer;
 }
 
-.filter-list {
+.filter__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -831,7 +831,7 @@ ul ol {
   margin-bottom: 50px;
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
@@ -850,8 +850,8 @@ ul ol {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -860,7 +860,7 @@ ul ol {
   cursor: pointer;
 }
 
-.active-btn {
+.filter__btn_active {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
