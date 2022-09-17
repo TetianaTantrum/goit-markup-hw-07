@@ -2,9 +2,7 @@
   background-color: #f5f4fa;
 }
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @extend %flexgap;
 }
 .team-mate-card {
   flex-basis: calc((100% - 3 * 30px) / 4);
@@ -22,10 +20,7 @@
 }
 .team-mate {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+    @include font(500, 16px, 19px, center);
   color: var(--title-color);
 }
 .profession {

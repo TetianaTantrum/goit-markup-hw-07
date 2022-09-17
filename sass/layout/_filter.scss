@@ -13,11 +13,7 @@
   min-width: 73px;
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 30px, center, 0.03em);
   background-color: var(--button-color);
   color: var(--title-color);
 

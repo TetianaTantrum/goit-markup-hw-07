@@ -1,7 +1,5 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @extend %flexgap;
 }
 
 .project-item {
@@ -53,10 +51,7 @@
 }
 .project-title {
   margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+    @include font(700, 18px, 36px, start, 0.06em);
   color: var(--title-color);
 }
 .project-text {

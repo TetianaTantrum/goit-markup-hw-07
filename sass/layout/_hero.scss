@@ -21,10 +21,7 @@
   padding: 0;
   margin-bottom: 30px;
   font-family: inherit;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+    @include font(900, 44px, 60px, center, 0.06em);
   text-transform: uppercase;
   color: var(--text-light-color);
 }
@@ -35,10 +32,7 @@
   border-radius: 4px;
   min-width: 216px;
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+    @include font(700, 16px, 30px, center, 0.06em);
   background-color: var(--accent-color);
   color: var(--text-light-color);
 

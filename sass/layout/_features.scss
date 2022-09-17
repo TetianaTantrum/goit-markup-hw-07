@@ -7,9 +7,7 @@
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .feature__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
