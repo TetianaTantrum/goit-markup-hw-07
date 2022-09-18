@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", "sans-serif";
+  font-family: $fontPrimary;
   letter-spacing: 0.03em;
   background-color: var(--text-light-color);
   color: var(--text-color);

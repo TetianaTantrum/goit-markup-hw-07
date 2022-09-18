@@ -31,7 +31,7 @@
   border: 0;
   border-radius: 4px;
   min-width: 216px;
-  font-family: "Roboto";
+  font-family: $fontPrimary;
     @include font(700, 16px, 30px, center, 0.06em);
   background-color: var(--accent-color);
   color: var(--text-light-color);

@@ -8,10 +8,10 @@
   column-gap: 50px;
   flex-basis: calc((100% - 93px) / 2);
 }
-.menu-item {
+.menu__item {
   flex-basis: calc((100% - 2 * 50px) / 3);
 }
-.nav {
+.menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -28,8 +28,7 @@
     color: var(--accent-color);
   }
 }
-
-.current {
+.menu__link--current {
   color: var(--accent-color);
   position: relative;
   &::after {
