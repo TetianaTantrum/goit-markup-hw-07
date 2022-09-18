@@ -6,6 +6,7 @@
   flex-basis: calc((100% - 3 * 10px) / 4);
 }
 .socials-link {
+    display:flex;
   @extend %align;
   width: 44px;
   height: 44px;
