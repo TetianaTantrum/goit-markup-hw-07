@@ -24,18 +24,6 @@
   margin: -1px;
 }
 
-.projects, .team-list, .occupation__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.clients-link, .occupation__title, .feature__icon, .close-button, .sign-up-btn, .socials-link, .actions-link, .actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -125,6 +113,18 @@ ul ol {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.projects, .team-list, .occupation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients-link, .occupation__title, .feature__icon, .close-button, .sign-up-btn, .socials-link, .actions-link, .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header {
